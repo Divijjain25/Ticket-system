@@ -1,0 +1,71 @@
+.container {
+  position: absolute;
+  width: 30vw;
+  height: 17vh;
+  border: 2px solid #d1d6da;
+  z-index: 10;
+  background-color: #fafbfc;
+  top: 10%;
+  right: 2%;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container h4 {
+  color: #000;
+  font-size: 1vw;
+  font-family: "Inter", sans-serif;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+
+.buttons button {
+  padding: 5px 1.5rem 5px 1.5rem;
+  border-radius: 20px;
+  border: none;
+  font-size: 0.8vw;
+  font-weight: 400;
+}
+
+.buttons button:first-child {
+  background-color: #fff;
+  color: #afafaf;
+  font-family: "Poppins", sans-serif;
+}
+
+.buttons button:last-child {
+  background-color: #184e7f;
+  color: #fafbfc;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 30vw;
+    height: 12vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+      width: 30vw;
+      height: 10vh;
+    }
+
+    .container h4{
+        font-size: 1.7vw;
+    }
+
+    .buttons button{
+        font-size: 1.4vw;
+    }
+
+  }

@@ -1,0 +1,111 @@
+.footer{
+    padding: 3rem 6rem 3rem 6rem;
+    background-color: #fff;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    position: relative;
+}
+
+.logo{
+    width:20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+
+.logo img{
+    width: 3vw;
+}
+
+.logo h1{
+    font-size: 2vw;
+    color: #184E7F;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+.offers{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+}
+
+.offer{
+    color:#1b1a1a;
+    font-family: "Inter",sans-serif;
+}
+
+.offer h5{
+    margin-bottom: 1rem;
+    font-size: 1vw;
+}
+
+.list{
+    list-style-type: none;
+    line-height: 2vw;
+    font-size: 1vw;
+}
+
+.social{
+    position: absolute;
+    bottom: 10vh;
+    right: 10vw
+}
+
+@media screen and (max-width:1440px) {
+    .logo img{
+        width: 4vw;
+    }
+    
+    .logo h1{
+        font-size: 3w;
+    }
+    
+    .offer h5{
+        font-size: 1.6vw;
+    }
+    
+    .list{
+        font-size: 1.6vw;
+        line-height: 2.5vw;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .logo img{
+        width: 5vw;
+    }
+    
+    .logo h1{
+        font-size: 4w;
+    }
+
+    .offers{
+        gap: 2.5vw;
+    }
+    
+    .offer h5{
+        font-size: 2vw;
+    }
+    
+    .list{
+        font-size: 2vw;
+        line-height: 2.8vw;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .footer{
+        padding: 3rem 2rem 3rem 2rem;
+    }
+
+    .social{
+        bottom: 5vh;
+        right: 8vw
+    }
+}

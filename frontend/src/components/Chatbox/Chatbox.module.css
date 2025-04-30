@@ -1,0 +1,221 @@
+.container{
+    position: fixed;
+    bottom: 8vw;
+    right:5%;
+    width: 20vw;
+    height: 30vw;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.header{
+    display: flex;
+    height: 12%;
+    background-color: #33475b;
+    align-items: center;
+    padding-left: 1rem;
+    gap: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.header img{
+    width: 2vw;
+}
+
+.header h5{
+    font-size: 1vw;
+    color: #fff;
+    font-family: "Inter",sans-serif;
+}
+
+.body{
+    height: 78%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    padding-bottom: 1rem;
+    overflow-y: auto;
+}
+
+.defaultInfo{
+    font-size: 0.8vw;
+    font-family: "Helvetica",sans-serif;
+    color: #8498B6;
+    text-align: center;
+}
+
+.chatbox{
+    height: 10%;
+    background-color: #fff;
+    display: flex;
+    border-radius: inherit;
+}
+
+.chatbox textarea{
+    padding:13px 0 0 7px;
+    resize: none;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 94%;
+    border-radius: inherit;
+    font-size: 1vw;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.chatbox textarea::placeholder{
+    color: #8498b6;
+}
+
+
+@media screen and (max-width:1440px) {
+    .container{
+        bottom: 15vw;
+        width: 30vw;
+        height: 40vw;
+    }
+     
+    .header img{
+        width: 3.5vw;
+    }
+    
+    .header h5{
+        font-size: 1.8vw;
+    }
+    
+    .defaultInfo{
+        font-size: 1vw;
+    }
+    
+    .chatbox{
+        height: 13%;
+    }
+    
+    .chatbox textarea{
+        font-size: 1.7vw;
+    }
+
+    .btn img{
+        width: 2vw;
+    }   
+}
+
+@media screen and (max-width:1024px) {
+    .container{
+        bottom: 16vw;
+        width: 35vw;
+        height: 45vw;
+    }
+     
+    .header img{
+        width: 3.8vw;
+    }
+    
+    .header h5{
+        font-size: 2vw;
+    }
+    
+    .defaultInfo{
+        font-size: 1.3vw;
+    }
+
+
+    .chatbox textarea{
+        font-size: 1.9vw;
+    }
+
+    .btn img{
+        width: 2.3vw;
+    }   
+}
+
+@media screen and (max-width:860px) {
+    .container{
+        bottom: 25vw;
+        width: 50vw;
+        height: 65vw;
+    }
+     
+    .header img{
+        width: 4.8vw;
+    }
+    
+    .header h5{
+        font-size: 2.7vw;
+    }
+    
+    
+    .defaultInfo{
+        font-size: 1.8vw;
+    }
+
+    .chatbox{
+        height: 13%;
+    }
+    
+    .chatbox textarea{
+        font-size: 2.9vw;
+    }
+
+    .btn img{
+        width: 3.2vw;
+    }   
+}
+
+
+@media screen and (max-width:699px) {
+    .container{
+        width:90%;
+        height: 70dvh;
+        bottom: 18%;
+    }
+    
+    .header img{
+        width: 10vw;
+    }
+    
+    .header h5{
+        font-size: 4vw;
+    }
+    
+    .body{
+        gap: 1.6rem;
+    }
+    
+    .chatbox{
+        height: 13%;
+    }
+    
+    .chatbox textarea{
+        font-size: 3.5vw;
+    }
+
+    .btn img{
+        width: 5vw;
+    }
+}
+
+
+@media screen and (max-width:560px) {
+    
+    .header img{
+        width: 12vw;
+    }
+    
+    .header h5{
+        font-size: 5vw;
+    }
+
+    .chatbox textarea{
+        font-size: 4.5vw;
+    }
+}

@@ -1,0 +1,149 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem 2rem 5rem 2rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    color: #30404d;
+}
+
+.header h2{
+    font-size: 2.5vw;
+}
+
+.header p{
+    font-size: 1vw;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 3px solid rgba(111, 164, 215, 0.16);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.leftContent{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.workDefine{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #394B59;
+}
+
+.workDefineHeader{
+    font-size: 1.3vw;
+    color: #30404d;
+}
+
+.workDefine h4{
+    font-size: 1vw;
+}
+
+.workDefine p{
+    font-size: 0.9vw;
+}
+
+.rightContent{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightContent img{
+    width: 70%;
+}
+
+@media screen and (max-width:1440px) {
+    
+    .header h2{
+        font-size: 3vw;
+    }
+    
+    .header p{
+        font-size: 1.8vw;
+    }
+
+    .workDefineHeader{
+        font-size: 2.3vw;
+    }
+    
+    .workDefine h4{
+        font-size: 2vw;
+    }
+    
+    .workDefine p{
+        font-size: 1.3vw;
+    }
+    
+}
+
+
+@media screen and (max-width:1023px) {
+    
+    .header h2{
+        font-size: 4vw;
+    }
+    
+    .header p{
+        font-size: 2vw;
+    }
+
+    .workDefineHeader{
+        font-size: 2.8vw;
+    }
+    
+    .workDefine h4{
+        font-size: 2.5vw;
+    }
+    
+    .workDefine p{
+        font-size: 1.9vw;
+    }
+    
+}
+
+
+@media screen and (max-width:850px) {
+    
+    .header h2{
+        font-size: 5vw;
+    }
+    
+    .header p{
+        font-size: 2.6vw;
+    }
+
+    .workDefineHeader{
+        font-size: 3vw;
+    }
+    
+    .workDefine h4{
+        font-size: 2.7vw;
+    }
+    
+    .workDefine p{
+        font-size: 1.9vw;
+    }
+    
+}

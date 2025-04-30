@@ -1,0 +1,219 @@
+.signup {
+  flex: 1;
+  width: 40%;
+  /* height: 70vh; */
+  /* background-color: aquamarine; */
+  margin-top: 1vh;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.header h2 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+  font-size: 1.5vw
+}
+
+.header h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8vw;
+  color: #4831d4;
+}
+
+.form{
+  padding: 0;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7vw;
+}
+
+.formGroup {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.formGroup label {
+  font-size: 0.8vw;
+  font-weight: 500;
+  color: #666666;
+  font-family: "Poppins", sans-serif;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 6px;
+  font-size: 1vw;
+  border-radius: 5px;
+  border: 1px solid rgba(102, 102, 102, 0.35);
+  font-family: "Poppins", sans-serif;
+}
+
+.formGroup input:focus {
+  outline: none;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #323232;
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+
+.terms input[type="checkbox"] {
+  appearance: none;
+  width: 0.6vw;
+  height: 0.6vw;
+  border: 2px solid #111;
+  cursor: pointer;
+  position: relative;
+}
+
+.terms input[type="checkbox"]:checked {
+  background-color: #111111;
+}
+
+.terms input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 0.5vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input button {
+  width: 100%;
+  padding: 2%;
+  font-size: 0.8vw;
+  border-radius: 15px;
+  background-color: #c3c3c3;
+  color: #fff;
+  border: none;
+  font-family: "Inter", sans-serif;
+}
+
+.input button:hover {
+  background-color: #111;
+  cursor: pointer;
+}
+
+
+.footer {
+  
+  color: #676b5f;
+  font-size: 0.5vw;
+  font-family: "Inter", sans-serif;
+  
+}
+
+.footer span {
+  text-decoration: underline;
+}
+
+@media screen  and (max-width:1440px) {
+    .signup{
+      width: 70%;
+      gap: 2vw;
+    }
+
+    .header{
+      margin-bottom: 1vh;
+    }
+
+    .header h2{
+      font-size: 2vw;
+    }
+    .header h4{
+      font-size: 1.3vw;
+    }
+
+    .formGroup label{
+      font-size: 1.5vw;
+    }
+
+    .formGroup input{
+        padding: 5px;
+        font-size: 1.5vw;
+    }
+
+    .terms{
+      font-size: 1.4vw;
+    }
+
+    .terms input[type="checkbox"] {
+      width: 1.5vw;
+      height: 1.5vw;
+    }
+
+    .terms input[type="checkbox"]:checked::after {
+      font-size: 1vw;
+    }
+
+    .input button{
+      padding: 10px;
+      font-size: 1.5vw;
+    }
+
+    .footer{
+      font-size: 0.9vw;
+    }
+}
+
+@media screen and (max-width:1024px) {
+  .signup{
+    width: 80%;
+  }
+
+  .header h2{
+    font-size: 2.5vw;
+  }
+  .header h4{
+    font-size: 1.6vw;
+  }
+
+  .formGroup label{
+    font-size: 1.8vw;
+  }
+
+  .formGroup input{
+    font-size: 2vw;
+  }
+
+  .terms{
+    font-size: 1.8vw;
+  }
+
+  .input{
+    gap: 1.5vw;
+  }
+
+  .input button{
+    padding: 12px;
+    font-size: 1.8vw;
+  }
+
+  
+
+  .footer{
+    font-size: 1vw;
+  }
+}

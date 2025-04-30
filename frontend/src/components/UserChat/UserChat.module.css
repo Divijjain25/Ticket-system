@@ -1,0 +1,169 @@
+.container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #d1d6da;
+    background-color: #fff;
+    height: 100vh;
+}
+
+.header{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+    border-bottom: 2px solid #d1d6da;
+    
+}
+
+.header h3{
+    color: #86898c;
+    font-family: 'Inter',sans-serif;
+    font-size: 1vw;
+}
+
+.timeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #8c8e92;
+}
+
+.timeContainer p{
+    font-size: 0.7vw;
+    font-family: "Inter",sans-serif;
+}
+
+.chatBody{
+    flex: 1;
+    /* height: 70%; */
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3px;
+    /* justify-content: flex-end; */
+    overflow-y: auto;
+    min-height: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.missedChat{
+    text-align: center;
+    font-size: 0.7vw;
+    color: #FF0000;
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+}
+
+.chatBody::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .chatBody::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+    border: 5px solid #6a6b70 ;
+    background-clip: content-box;
+  }
+
+
+.inputContainer{
+    height:20%;
+    /* height: auto; */
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+ .disableText{
+    color: rgba(0, 0, 0, 0.45);
+    font-family: 'Inter',sans-serif;
+    font-size: 0.8vw;
+    text-align: center;
+}
+
+.input{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    border: 2px solid #d1d6da;
+    border-radius: 10px;
+}
+
+.input textarea{
+    resize: none;
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 95%;
+}
+
+.input img{
+    /* background: ; */
+    width: 1.5vw;
+    align-self: flex-end;
+}
+
+
+@media screen and (max-width:1440px) {
+    
+    .header h3{
+        font-size: 1.8vw;
+    }
+
+    .header img{
+        width: 1.4vw;
+    }
+
+    .timeContainer p{
+        font-size: 1.6vw;
+    }
+
+    .disableText{
+        font-size: 1.4vw;
+    }
+
+    .input textarea{
+        font-size: 2vw;
+    }
+
+    .input img{
+        width: 3vw;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .header{
+        padding: 0 10px 0 10px;
+    }
+
+    .header h3{
+        font-size: 2vw;
+    }
+
+    .header img{
+        width: 1.8vw;
+    }
+
+    .timeContainer p{
+        font-size: 1.5vw;
+    }
+
+    .disableText{
+        font-size: 2vw;
+        
+    }
+
+    .input textarea{
+        font-size: 2vw;
+    }
+
+    .input img{
+        width: 3.5vw;
+    }
+}

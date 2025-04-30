@@ -1,0 +1,53 @@
+.chatbot{
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    background-color: #33475b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 5vh;
+    right: 5%;
+}
+
+.chatbot img{
+    width: 50%;
+}
+
+
+@media screen and (max-width:1440px) {
+    .chatbot{
+        width: 7vw;
+        height: 7vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .chatbot{
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+
+@media screen and (max-width:699px) {
+
+    .container{
+        height: 100dvh;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .chatbot{
+        width: 16vw;
+        height: 16vw;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .chatbot{
+        width:20vw;
+        height: 20vw;
+    }
+}

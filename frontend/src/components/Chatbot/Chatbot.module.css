@@ -1,0 +1,424 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  /* height: 5vh; */
+  display: flex;
+  align-items: center;
+}
+
+.header h2 {
+  color: #6a6b70;
+  font-weight: 500;
+  font-size: 1.2vw;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  /* height: 100%; */
+}
+
+.leftContent {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.chatbox {
+  /* width: 17vw;
+    height: 22vw; */
+  width: 20vw;
+  height: 25vw;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.chatboxHeader {
+  display: flex;
+  height: 12%;
+  /* background-color: #33475b; */
+  align-items: center;
+  padding-left: 1rem;
+  gap: 1rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.chatboxHeader img {
+  width: 2vw;
+}
+
+.chatboxHeader h5 {
+  font-size: 1vw;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.chatboxBody {
+  height: 78%;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  overflow-y: auto;
+}
+
+.chatboxInput {
+  height: 10%;
+  background-color: #fff;
+  display: flex;
+  border-radius: inherit;
+}
+
+.chatboxInput textarea {
+  padding: 5px 0 0 7px;
+  resize: none;
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 94%;
+  border-radius: inherit;
+  font-size: 1vw;
+}
+
+.chatboxBtn {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  background: transparent;
+  border: none;
+}
+
+.chatboxInput textarea::placeholder {
+  color: #8498b6;
+}
+
+.defaultMessage{
+  width:14vw;
+  background-color: #fff;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 10px;
+  margin-left: 2rem;
+}
+
+.defaultMessageHeader{
+  font-size: 0.8vw;
+}
+
+.defaultMessageForm{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.defaultMessageFormGroup{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.defaultMessageFormGroup label{
+  font-size: 0.7vw;
+  color: #505050;
+  font-weight: 500;
+  font-family: 'Poppins',sans-serif;
+}
+
+.defaultMessageForm input{
+  border: none;
+  outline: none;
+  /* padding: 5px; */
+  border-bottom: 1px solid #c3c3c3;
+  font-size: 0.7vw;
+  font-weight: 600;
+  color: #000;
+  font-family: 'Poppins',sans-serif;
+}
+
+.defaultMessageForm button{
+  align-self: center;
+  width: 8vw;
+  height: 1.7vw;
+  border-radius: 10px;
+  border: none;
+  background-color: #184e7f;
+  color: #fff;
+  font-size: 0.8vw;
+}
+
+.chatbotPopup {
+  width: 12vw;
+  font-size: 0.8vw;
+  background-color: #fff;
+  padding: 7px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.botDp {
+  position: absolute;
+  top: -25%;
+  left: 40%;
+}
+
+.closeBtn {
+  display: flex;
+  justify-content: flex-end;
+  /* padding: 5px; */
+}
+
+.closeBtn img {
+  width: 0.6vw;
+}
+
+.chatbotPopup p {
+  padding: 3px;
+  font-size: 0.7vw;
+  line-height: 1rem;
+  font-family: "Inter", sans-serif;
+  color: #33575b;
+  font-weight: 500;
+}
+
+.rightContent {
+  flex: 1;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow-y: auto;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.rightContent::-webkit-scrollbar {
+  width: 5px;
+}
+
+.rightContent::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 20px;
+  border: 5px solid #6a6b70;
+  background-clip: content-box;
+}
+
+.editContainer {
+  /* background-color: antiquewhite; */
+  width: 60%;
+  /* min-height: 18vh; */
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #c3c3c3;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.editContainerHeader {
+  font-size: 0.8vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.colorOption {
+  display: flex;
+  gap: 1rem;
+}
+
+.color {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.chosenColor {
+  display: flex;
+  gap: 1rem;
+}
+
+.square {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 7px;
+  border: 1px solid #c3c3c3;
+}
+
+.chosenColor p {
+  width: 8vw;
+  height: 2vw;
+  border: 1px solid #c3c3c3;
+  border-radius: 7px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f6f7f5;
+  font-size: 0.8vw;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.editMessageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.editMessageContainer p {
+  font-size: 0.8vw;
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f7f5;
+  padding: 7px;
+}
+
+.editMessage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editDefaultMessageContainer {
+  flex: 1;
+  display: flex;
+}
+
+.form {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+  height: 100%;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-size: 0.7vw;
+  color: #505050;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.form input {
+  border: none;
+  outline: none;
+  /* padding: 5px; */
+  background-color: transparent;
+  border-bottom: 1px solid #c3c3c3;
+  font-size: 0.7vw;
+  font-weight: 600;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+.form input[readonly] {
+  cursor: pointer;
+}
+
+.form button {
+  align-self: center;
+  width: 8vw;
+  height: 1.7vw;
+  border-radius: 10px;
+  border: none;
+  background-color: #184e7f;
+  color: #fff;
+  font-size: 0.8vw;
+}
+
+.welcomeMessageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  background-color: #f6f7f5;
+  padding: 5px;
+}
+
+.welcomeMessageContainer span {
+  align-self: flex-end;
+  font-size: 0.5vw;
+  color: #838383;
+}
+
+.welcomeMessage {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.welcomeMessage textarea {
+  width: 90%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  font-size: 0.8vw;
+  padding: 8px;
+}
+
+.welcomeMessage textarea::-webkit-scrollbar {
+  display: none;
+}
+
+
+.timeContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.timeContainer button{
+    width: 5vw;
+    height: 2vw;
+    font-size: 1vw;
+    border-radius: 10px;
+    background-color: #184e7f;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+  
+
+  .editContainer {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width:800px) {
+  .editContainer {
+    width: 85%;
+  }
+}

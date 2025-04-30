@@ -1,0 +1,66 @@
+.contentBodyRow{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem 5px 1.5rem;
+    border-bottom: 2px solid #e2e9f0;
+    position: relative;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    /* gap: 7rem; */
+    list-style-type: none;
+}
+
+.data li{
+    width: 15vw;
+    font-size: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: "Inter",sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    padding-right: 13px;
+}
+
+
+.data li img{
+    width: 2vw;
+}
+
+.btns{
+    display: flex;
+    gap: 1rem;
+}
+
+.btns img{
+    width: 1vw;
+}
+
+@media screen and (max-width:1440px) {
+    .data li{
+        width: 20vw;
+        font-size: 1.2vw;
+    }
+
+    .data li img{
+        width: 2.7vw;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .data li{
+        width: 17vw;
+        font-size: 1.5vw;
+    }
+
+    .data li img{
+        width: 3vw;
+    }
+}

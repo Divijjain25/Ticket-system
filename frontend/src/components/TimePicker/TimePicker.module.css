@@ -1,0 +1,43 @@
+.timePicker {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .scrollColumn {
+    height: 6vw;
+    width: 2vw;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+  }
+  
+  .scrollItem {
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7vw;
+    scroll-snap-align: center;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .scrollItem:hover {
+    background-color: #e2e2e2;
+  }
+
+  .scrollColumn::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .active {
+    font-weight: bold;
+    background-color: #d0e6ff;
+    color: #000;
+  }
+
+  

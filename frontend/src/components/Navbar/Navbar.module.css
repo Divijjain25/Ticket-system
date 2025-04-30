@@ -1,0 +1,139 @@
+.header{
+    width: 100%;
+    height: 10vh;
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.logo img{
+    width: 3vw;
+}
+
+.logo h1{
+    font-size: 2vw;
+    color: #184E7F;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons a{
+    color: #36364A;
+    font-weight: 500;
+    font-size: 1.1vw;
+    text-decoration: none;
+}
+
+.buttons button{
+    /* padding: 1rem; */
+    width: 6vw;
+    height: 2.5vw;
+    border-radius: 5px;
+    background-color: #244779 ;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1vw;
+}
+
+@media screen and (max-width:1440px) {
+
+    .logo{
+        gap: 1rem;
+    }
+
+    .logo img{
+        width: 4.5vw;
+    }
+    
+    .logo h1{
+        font-size: 2.5vw;
+    }
+    
+    .buttons{
+        gap: 1rem;
+    }
+    
+    .buttons a{
+        font-size: 1.8vw;
+    }
+    
+    .buttons button{
+        /* padding: 1rem; */
+        width: 8vw;
+        height: 3.5vw;
+        font-size: 1.8vw;
+    }
+}
+
+@media screen and (max-width:1023px) {
+
+
+    .logo img{
+        width: 6.5vw;
+    }
+    
+    .logo h1{
+        font-size: 4vw;
+    }
+    
+
+    .buttons a{
+        font-size: 3vw;
+    }
+    
+    .buttons button{
+        /* padding: 1rem; */
+        width: 14vw;
+        height: 5.5vw;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    .logo{
+        gap: 1rem;
+    }
+
+    .logo img{
+        width: 8vw;
+    }
+    
+    .logo h1{
+        font-size: 5vw;
+    }
+    
+    .buttons{
+        gap: 1rem;
+    }
+    
+    .buttons a{
+        font-size: 3.5vw;
+    }
+    
+    .buttons button{
+        /* padding: 1rem; */
+        width: 15vw;
+        height: 7vw;
+        font-size: 3.5vw;
+    }
+}

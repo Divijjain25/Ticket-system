@@ -1,0 +1,75 @@
+.container {
+  width: 20%;
+  background-color: #fafbfc;
+  border-right: 2px solid #d1d6da;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  padding: 10px 1rem 0 10px;
+}
+
+.header h2 {
+  color: #6a6b70;
+  font-weight: 500;
+  font-size: 1.2vw;
+  font-family: "Inter", sans-serif;
+}
+
+.chatContainer {
+  flex: 1;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.chatContainer h4 {
+  text-decoration: underline;
+  text-decoration-color: #b9baba;
+  color: #b9baba;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.chatList {
+  padding: 2px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.chatList::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .chatList::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+    border: 5px solid #6a6b70 ;
+    background-clip: content-box;
+  }
+
+  @media screen and (max-width:1440px) {
+    .header h2{
+      font-size: 1.6vw;
+    }
+
+    .chatContainer h4{
+      font-size: 1.4vw;
+    }
+  }
+
+  @media screen and (max-width:1024px) {
+    .header h2{
+      font-size: 1.7vw;
+    }
+
+    .chatContainer h4{
+      font-size: 1.5vw;
+    }
+  }

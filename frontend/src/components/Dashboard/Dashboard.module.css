@@ -1,0 +1,160 @@
+.dashboard{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* overflow: hidden; */
+}
+
+.header{
+    color: #6a6b70;
+    font-weight: 500;
+    font-size: 1.2vw;
+    font-family: 'Inter',sans-serif;
+}
+
+.searchBar{
+    display: flex;
+    background-color: #fbfbfb;
+    width: 18vw;
+    /* height: 5vh; */
+    border-radius: 5px;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 1rem;
+    padding: 10px;
+    border: 2px solid #eeeeee;
+    
+}
+
+.searchBar img{
+    width: 0.8vw;
+}
+
+.searchBar input{
+    border: none;
+    outline: none;
+    width: 95%;
+    height: 100%;
+    background: transparent;
+    font-size: 0.8vw;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.searchBar input::placeholder{
+    color: #b6b6b6;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+  }
+  
+  .tab {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8vw;
+    color: #999;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 5px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .tab:hover {
+    color: #244779;
+  }
+
+  .tab img{
+    stroke: #6a6b70;
+  }
+  
+  .active {
+    color: #244779;
+    font-weight: 500;
+  }
+  
+  .active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #244779;
+    border-radius: 2px;
+  }
+
+  .ticketList{
+    /* height: 100%; */
+    /* min-height: 80vh; */
+    overflow-y: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .ticketList::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .ticketList::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+    border: 5px solid #6a6b70 ;
+    background-clip: content-box;
+  }
+
+
+  @media screen and (max-width:1440px) {
+    .header{
+      font-size: 1.6vw;
+    }
+
+    .searchBar{
+      width: 25vw;
+    }
+
+    .searchBar img{
+      width: 1.4vw;
+    }
+
+    .searchBar input{
+      font-size: 1.4vw;
+    }
+
+    .tab{
+      font-size: 1.4vw;
+    }
+  }
+
+  @media screen and (max-width:1024px) {
+    .header{
+      font-size: 2.7vw;
+    }
+
+    .searchBar{
+      width: 35vw;
+    }
+
+    .searchBar img{
+      width: 2vw;
+    }
+
+    .searchBar input{
+      font-size: 2vw;
+    }
+
+    .tab{
+      font-size: 2vw;
+    }
+  }
