@@ -12,7 +12,7 @@ const messageRoutes = require('./routes/messageRoutes')
 const settingsRoutes = require('./routes/settingsRoutes')
 const analyticsRoutes = require('./routes/analyticsRoutes')
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8004;
 
 app.use(cors());
 app.use(express.json());
