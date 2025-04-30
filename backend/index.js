@@ -27,6 +27,11 @@ app.use('/api/analytics',analyticsRoutes)
 
 //connect to db and start server
 connectToDb();
+// Add this just before app.listen()
+app.get('/', (req, res) => {
+  res.send('Backend server is running!');
+});
+
 app.listen(port, () => {
   console.log(`App is running on ${port}`);
 });
